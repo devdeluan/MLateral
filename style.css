@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    height: 100%;
+}
+
+nav.menu-lateral {
+    width: 70px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.973);
+    backdrop-filter: blur (10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* background-color: black; */
+    /* padding: 40px 0 40px 1%; */
+    box-shadow: 3px 0 0 #000000;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+nav.menu-lateral:hover{
+    width: 300px;
+}
+
+.btn-expandir {
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    font-size: 12px;
+    font-weight: bolder;
+    color: white;
+    width: 100%
+    /* padding left: 2px; */
+}
+
+.btn-expandir > p {
+    margin-left: 1%;
+    color:white;
+}
+
+.btn-expandir > i {
+    color:#CF4B83;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: .2s;
+}
+
+ul li.item-menu:hover {
+    background: green;
+
+
+}
+
+ul li.item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 40px;
+}
+
+
+ul li.item-menu a .icon > i {
+    font-size: 30px;
+}
